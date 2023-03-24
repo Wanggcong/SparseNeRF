@@ -21,7 +21,7 @@
 
 ### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2207.14811) 
 <tr>
-    <img src="https://github.com/wanggcong/wanggcong.github.io/blob/master/projects/SparseNeRF/static/images/demo_video_v4_scenes_only_sampled3.gif" width="90%"/>
+    <img src="./demo.gif" width="90%"/>
 </tr>
 </div>
 
