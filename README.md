@@ -20,6 +20,8 @@
 
 
 ### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2207.14811) 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=williamyang1991/VToonify)
+<!--![visitors](https://visitor-badge.glitch.me/badge?page_id=williamyang1991/VToonify)-->
 <tr>
     <img src="./demo.gif" width="90%"/>
 </tr>
