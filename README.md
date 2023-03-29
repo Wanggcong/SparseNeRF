@@ -2,10 +2,6 @@
 
 <h1>SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis </h1>
 
-<div style="width: 70%; text-align: center; margin:auto;">
-    <img style="width:100%" src="img/SparseNeRF-framework.png">
-    <em>Figure 1. <strong>Framework Overview. SparseNeRF consists of two streams, i.e., NeRF and depth prior distillation. As for NeRF, we use Mip-NeRF as the backbone. we use a NeRF reconstruction loss. As for depth prior distillation, we distill depth priors from a pre-trained depth model. Specifically, we propose a local depth ranking regularization and a spatial continuity regularization to distill robust depth priors from coarse depth maps..</em>
-</div>
 
 <div>
     <a href='https://wanggcong.github.io/' target='_blank'>Guangcong Wang</a>&emsp;
@@ -30,6 +26,11 @@
 <tr>
     <img src="img/demo.gif" width="90%"/>
 </tr>
+</div>
+
+<div style="width: 70%; text-align: center; margin:auto;">
+    <img style="width:100%" src="img/SparseNeRF-framework.png">
+    <em>Figure 1. <strong>Framework Overview. SparseNeRF consists of two streams, i.e., NeRF and depth prior distillation. As for NeRF, we use Mip-NeRF as the backbone. we use a NeRF reconstruction loss. As for depth prior distillation, we distill depth priors from a pre-trained depth model. Specifically, we propose a local depth ranking regularization and a spatial continuity regularization to distill robust depth priors from coarse depth maps..</em>
 </div>
 
 >**Abstract:** Neural Radiance Field (NeRF) significantly degrades when only a limited number of views are available. To complement the lack of 3D information, depth-based models, such as DSNeRF and MonoSDF, explicitly assume the availability of accurate depth maps of multiple views. They linearly scale the accurate depth maps as supervision to guide the predicted depth of few-shot NeRFs. However, accurate depth maps are difficult and expensive to capture due to wide-range depth distances in the wild. 
