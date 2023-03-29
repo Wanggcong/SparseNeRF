@@ -19,7 +19,7 @@
 
 
 
-### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2207.14811) 
+### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=wanggcong/SparseNeRF)
 <!--![visitors](https://visitor-badge.glitch.me/badge?page_id=wanggcong/SparseNeRF)-->
 <tr>
