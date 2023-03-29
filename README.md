@@ -3,7 +3,7 @@
 <h1>SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis </h1>
 
 <div style="width: 70%; text-align: center; margin:auto;">
-    <img style="width:100%" src="img/SparseNeRF_framework.png">
+    <img style="width:100%" src="img/SparseNeRF-framework.png">
     <em>Figure 1. <strong>Framework Overview. SparseNeRF consists of two streams, i.e., NeRF and depth prior distillation. As for NeRF, we use Mip-NeRF as the backbone. we use a NeRF reconstruction loss. As for depth prior distillation, we distill depth priors from a pre-trained depth model. Specifically, we propose a local depth ranking regularization and a spatial continuity regularization to distill robust depth priors from coarse depth maps..</em>
 </div>
 
