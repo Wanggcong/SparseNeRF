@@ -23,7 +23,6 @@
 ### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=wanggcong/SparseNeRF)
 <!--![visitors](https://visitor-badge.glitch.me/badge?page_id=wanggcong/SparseNeRF)-->
-<div>
 <tr>
     <img src="img/demo.gif" width="90%"/>
 </tr>
@@ -40,9 +39,6 @@
 </tr>
 </div>
 
-<div style="width: 70%; text-align: center; margin:auto;">
-    <img style="width:100%" src="img/SparseNeRF-framework.png">
-    <em>Figure 1. <strong>Framework Overview. SparseNeRF consists of two streams, i.e., NeRF and depth prior distillation. As for NeRF, we use Mip-NeRF as the backbone. we use a NeRF reconstruction loss. As for depth prior distillation, we distill depth priors from a pre-trained depth model. Specifically, we propose a local depth ranking regularization and a spatial continuity regularization to distill robust depth priors from coarse depth maps..</em>
-</div>
+
 
 
