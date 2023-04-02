@@ -22,7 +22,7 @@
 
 ### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
 <div>
-Code and dataset will be released. Stay tuned :beers:🤗
+Code and dataset will be released. Stay tuned :beers: :fire: :+1: 
 </div>
     
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=wanggcong/SparseNeRF)
