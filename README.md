@@ -20,7 +20,7 @@
 
 
 
-### [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
+### :fire: [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
 <div>
 Code and dataset will be released. Stay tuned :beers: :+1: :fire:
 </div>
