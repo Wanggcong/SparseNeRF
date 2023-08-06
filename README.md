@@ -32,7 +32,8 @@
 </tr>
 </div>
 
->Update: We are working very hard on releasing the code. Expected to release the code in a few days.
+>:fire: **Update**:
+- [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
 
 >:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
