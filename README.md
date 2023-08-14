@@ -248,7 +248,7 @@ on Computer Vision (ICCV)},
 
 or
 ```
-Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis, Under review.
+Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis, IEEE/CVF International Conference on Computer Vision (ICCV) 2023.
 ```
 
 ## 10. Related Links
