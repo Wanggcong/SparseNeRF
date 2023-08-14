@@ -1,0 +1,49 @@
+# DTU settings
+# text split is from pixelnerf dataset (google drive), 15 scenes
+# scan8,scan21,30, 31,34,38,40,41,45,55,63,82,103,110,114,
+# 8 is ball; 21house; 30 onion; 31 onion; 34 blocks; 38 blocks; 40 blocks; 
+# 41 is bucket; 45 bottles; 55 rabbit; 63 fruits; 82 cute blue rabbit; 
+# 103 pig; 110 bronze; 114 monk
+
+Config.data_dir= "/mnt/lustre/gcwang/datasets/DTU/Rectified"
+Config.dtu_mask_path = "/mnt/lustre/gcwang/datasets/DTU/submission_data/idrmasks"
+Config.dtu_pose_path="/mnt/lustre/gcwang/datasets/DTU/Calibration/cal18/"
+
+
+Config.checkpoint_dir = "dtu3_103_depth" # will re-set in the command
+Config.dtu_scan = "scan103" # will re-set in the command
+
+
+Config.batch_size = 256
+Config.batch_size_random = 256
+
+Config.dataset_loader = 'dtu'
+Config.white_background = False
+Config.near = 0.5
+Config.far = 3.5
+Config.factor = 4
+Config.render_factor = 4
+MLP.density_noise = 1.  
+
+Config.n_input_views = 3
+Config.max_steps = 90000
+
+Config.lr_init = 0.002
+Config.lr_final = 0.00002
+Config.lr_delay_steps = 512
+Config.lr_delay_mult = 0.01
+Config.grad_max_norm = 0.1
+Config.grad_max_val = 0.1
+
+Config.anneal_nearfar = True
+Config.anneal_nearfar_steps = 256
+Config.anneal_nearfar_perc = 0.5
+
+Config.depth_tvnorm_loss_mult = 0.1
+Config.depth_tvnorm_decay = True
+Config.depth_tvnorm_maxstep = 512
+Config.depth_tvnorm_loss_mult_start = 400.0
+Config.depth_tvnorm_loss_mult_end = 0.1
+
+Config.flow_loss_mult = 0.0
+Config.depth_tvnorm_mask_weight = 1.0

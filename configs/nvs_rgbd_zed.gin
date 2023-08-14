@@ -1,0 +1,54 @@
+
+
+# lidar
+# Config.data_dir = "/root/projects/SparseNeRF++/llff-rgbd-v2v3-processed" 
+
+# kinect
+# Config.data_dir = "/root/projects/SparseNeRF++/azure_kinect_rgbd_v2_selected"
+
+
+Config.data_dir = "/mnt/lustre/gcwang/datasets/NVS-RGBD/zed2"
+
+
+Config.checkpoint_dir = "out/llff3_depth_room" # will reset in the command
+Config.random_pose_flag = False
+
+# fern  flower  fortress  horns  leaves  orchids  room  trex
+Config.llff_scan = 'room'  # will reset
+
+Config.max_steps = 60000 #69768
+batch_size= 4096 
+batch_size_random = 4096 
+
+
+Config.dataset_loader = 'zed2'
+Config.white_background = False
+Config.factor = 2                
+Config.render_factor = 2           
+Config.near = 0
+Config.far = 1
+MipNerfModel.ray_shape = 'cylinder'
+MLP.density_noise = 1.
+
+Config.n_input_views = 3
+
+
+Config.lr_init = 0.002
+Config.lr_final = 0.00002
+Config.lr_delay_steps = 512
+Config.lr_delay_mult = 0.01
+Config.grad_max_norm = 0.1
+Config.grad_max_val = 0.1
+
+Config.anneal_nearfar = True #### true for default 
+Config.anneal_nearfar_steps = 512
+Config.anneal_nearfar_perc = 0.0001
+Config.anneal_mid_perc = 1.0
+
+Config.depth_tvnorm_loss_mult = 0.1
+Config.depth_tvnorm_decay = True
+Config.depth_tvnorm_maxstep = 512
+Config.depth_tvnorm_loss_mult_start = 400.0
+Config.depth_tvnorm_loss_mult_end = 0.1
+
+Config.flow_loss_mult = 0
