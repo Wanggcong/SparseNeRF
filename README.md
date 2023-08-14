@@ -2,6 +2,7 @@
 
 <h1>SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis </h1>
 
+
 <div>
     <a href='https://wanggcong.github.io/' target='_blank'>Guangcong Wang</a>&emsp;
     <a href='https://frozenburning.github.io/' target='_blank'>Zhaoxi Chen</a>&emsp;
@@ -13,20 +14,41 @@
 </div>
 
 <div>
-    Under review
+    ICCV, 2023
 </div>
 
 
 
 
-### [Project](https://style-light.github.io/) | [YouTube](https://www.youtube.com/watch?v=sHeWK1MSPg4) | [arXiv](https://arxiv.org/abs/2207.14811) 
+### :fire: [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
+<div>
+:fire: Code and dataset will be released in a few days. Sorry for the delay. 
+</div>
+    
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=wanggcong/SparseNeRF)
+<!--![visitors](https://visitor-badge.glitch.me/badge?page_id=wanggcong/SparseNeRF)-->
 <tr>
-    <img src="https://github.com/wanggcong/wanggcong.github.io/blob/master/projects/SparseNeRF/static/images/demo_video_v4_scenes_only_sampled3.gif" width="90%"/>
+    <img src="img/demo.gif" width="90%"/>
 </tr>
 </div>
 
->**Abstract:** Neural Radiance Field (NeRF) has achieved remarkable results in synthesizing photo-realistic novel views with implicit function representations. However, NeRF significantly degrades when only a few views are available. To address this problem, existing few-shot NeRF methods impose sparsity and continuity regularizations on geometry (e.g., density and depth), or exploit high-level semantics to guide the learning of NeRF. Although these methods reduce degradation in few-shot scenarios, they still struggle to synthesize photo-realistic novel views due to insufficient 3D constraints. To complement the lack of 3D information, we present a new Sparse-view NeRF (SparseNeRF) framework that effectively exploits robust depth priors from a large pre-trained depth model. Since the depth estimation of large pre-trained depth models is coarse, we propose a local depth ranking constraint on NeRF such that the expected depth ranking of the NeRF is consistent with that of the pre-trained depth model in local patches. To preserve spatial continuity of the estimated depth of NeRF, we further propose a spatial continuity constraint such that the expected depth continuity of NeRF is consistent with that of the pre-trained depth model. With the distilled depth priors of large pre-trained depth models, SparseNeRF outperforms all of the state-of-the-art few-shot NeRF methods. Extensive experiments on the LLFF and DTU benchmarks show the effectiveness and superiority of SparseNeRF. Code and models will be released.
+>:fire: **Update**:
+- [20230814] Code released. Please let us know if any bug exists.
+- [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
 
+>:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
+
+>:fire: **Abstract:** Neural Radiance Field (NeRF) significantly degrades when only a limited number of views are available. To complement the lack of 3D information, depth-based models, such as DSNeRF and MonoSDF, explicitly assume the availability of accurate depth maps of multiple views. They linearly scale the accurate depth maps as supervision to guide the predicted depth of few-shot NeRFs. However, accurate depth maps are difficult and expensive to capture due to wide-range depth distances in the wild. 
+
+>In this work, we present a new Sparse-view NeRF (**SparseNeRF**) framework that exploits depth priors from real-world inaccurate observations. The inaccurate depth observations are either from pre-trained depth models or coarse depth maps of consumer-level depth sensors. Since coarse depth maps are not strictly scaled to the ground-truth depth maps, we propose a simple yet effective constraint, a local depth ranking method, on NeRFs such that the expected depth ranking of the NeRF is consistent with that of the coarse depth maps in local patches. To preserve the spatial continuity of the estimated depth of NeRF, we further propose a spatial continuity constraint to encourage the consistency of the expected depth continuity of NeRF with coarse depth maps. Surprisingly, with simple depth ranking constraints, SparseNeRF outperforms all state-of-the-art few-shot NeRF methods (including depth-based models) on standard LLFF and DTU datasets. Moreover, we collect a new dataset NVS-RGBD that contains real-world depth maps from Azure Kinect, ZED 2, and iPhone 13 Pro. Extensive experiments on NVS-RGBD dataset also validate the superiority and generalizability of SparseNeRF.
+
+<div align="center">
+<tr>
+    <img src="img/SparseNeRF-framework.png" width="90%"/>
+</tr>
+</div>
+
+>:fire: **Framework Overview:** SparseNeRF consists of two streams, i.e., NeRF and depth prior distillation. As for NeRF, we use Mip-NeRF as the backbone. we use a NeRF reconstruction loss. As for depth prior distillation, we distill depth priors from a pre-trained depth model. Specifically, we propose a local depth ranking regularization and a spatial continuity regularization to distill robust depth priors from coarse depth maps.
 
 
 ## 1. Prerequisites
@@ -86,7 +108,12 @@ pip install imageio-ffmpeg
 - Get depth maps
 - For both LLFF and DTU, please set the variables $root_path, $benchmark, and $dataset_id in get_depth_map.sh, and run:
 ```
-sh scripts/get_depth_map.sh
+sh scripts/get_depth_map_for_llff.sh
+
+```
+
+```
+sh scripts/get_depth_map_for_dtu.sh
 
 ```
 
@@ -104,46 +131,99 @@ sh scripts/train_llff.sh
 Please set the variables in train_dtu3.sh, and run:
 
 ```
-sh scripts/train_dtu3.sh
+sh scripts/train_dtu.sh
+```
+### 4.3 Training on NVS-RGBD
+Similar to 4.1 and 4.2. The depth maps are from depth sensors.
+
+
+```
+sh scripts/train_kinect.sh
 ```
 
+```
+sh scripts/train_zed.sh
+```
+
+```
+sh scripts/train_iphone.sh
+```
 
 ## 5. Test 
-### 5.1 Evaluate PSNR and SSIM
+### 5.1 Evaluation on LLFF
 Please set the variables (the same as train_llff3.sh and train_dtu3.sh) in eval_llff3.sh or eval_dtu3, and run:
 ```
-sh scripts/eval_llff3.sh
+sh scripts/eval_llff.sh
 ```
 
-or 
+### 5.2 Evaluation on DTU
 ```
-sh scripts/eval_dtu3.sh
+sh scripts/eval_dtu.sh
+``` 
+
+### 5.3 Evaluation on NVS-RGBD
 ```
-### 5.2 (optional) Render videos
-Please set the variables (the same as train_llff3.sh and train_dtu3.sh) in render_video_llff3.sh or render_video_dtu3, and run:
+sh scripts/eval_kinect.sh
+``` 
 ```
-sh scripts/render_video_llff3.sh
+sh scripts/eval_zed.sh
+``` 
+```
+sh scripts/eval_iphone.sh
+``` 
+## 6 (optional) Render videos
+Please set the variables (the same as train_llff.sh and train_dtu.sh) in render_llff.sh or render_dtu.sh, and run.
+
+### 6.1 Render videos on LLFF
+```
+sh scripts/render_llff.sh
 ```
 
-or 
+### 6.2 Render videos on DTU
 ```
-sh scripts/render_video_dtu3.sh
-```
-
-### 5.3 (optional) Compose videos
-Please set the variables in get_video.sh, and run:
-```
-sh get_video.sh
+sh scripts/render_dtu.sh
 ```
 
-### 5.4 (optional) Tensorboard for visualizing training if necessary.
+### 6.3 Render videos on NVS-RGBD
+```
+sh scripts/render_kinect.sh
+```
+```
+sh scripts/render_zed.sh
+```
+```
+sh scripts/render_iphone.sh
+```
+
+### 7 (optional) Compose videos
+Please set the variables in generate_video_llff.sh or other scripts, and run.
+### 7.1 Compose videos on LLFF
+```
+sh generate_video_llff.sh
+```
+### 7.2 Compose videos on DTU
+```
+sh generate_video_dtu.sh
+```
+### 7.3 Compose videos on NVS-RGBD
+```
+sh generate_video_kinect.sh
+```
+```
+sh generate_video_zed.sh
+```
+```
+sh generate_video_iphone.sh
+```
+
+### 8 (optional) Tensorboard for visualizing training if necessary.
 ```
 tensorboard --logdir=./out/xxx/ --port=6006
 ```
 If it raises errors, see Q2 of [FQA](https://github.com/Wanggcong/SparseNeRF/blob/master/FQA.md)
 
 
-## 6. To-Do
+## 9. To-Do
 - [x] Training code
 - [x] Inference model
 - [x] Clean Code
@@ -151,7 +231,7 @@ If it raises errors, see Q2 of [FQA](https://github.com/Wanggcong/SparseNeRF/blo
 
 
 
-## 7. Citation
+## 10. Citation
 
 If you find this useful for your research, please cite the our paper.
 
@@ -159,8 +239,9 @@ If you find this useful for your research, please cite the our paper.
 @inproceedings{wang2022sparsenerf,
    author    = {Wang, Guangcong and Chen, Zhaoxi and Loy, Chen Change and Liu, Ziwei},
    title     = {SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis},
-   booktitle = {Under review},   
-   year      = {2022},
+   booktitle = {IEEE/CVF International Conference
+on Computer Vision (ICCV)},   
+   year      = {2023},
   }
 ```
 
@@ -169,18 +250,18 @@ or
 Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis, Under review.
 ```
 
-## 8. Related Links
+## 11. Related Links
 [RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs, CVPR, 2022](https://m-niemeyer.github.io/regnerf/index.html)
 
+[Traditional Classification Neural Networks are Good Generators: They are Competitive with DDPMs and GANs](https://classifier-as-generator.github.io/)
+
+[SceneDreamer: Unbounded 3D Scene Generation from 2D Image Collections](https://scene-dreamer.github.io/)
+
 [StyleLight: HDR Panorama Generation for Lighting Estimation and Editing, ECCV 2022](https://github.com/Wanggcong/StyleLight).
+
+[Text2Light: Zero-Shot Text-Driven HDR Panorama Generation](https://frozenburning.github.io/projects/text2light/)
 
 [Relighting4D: Neural Relightable Human from Videos, ECCV 2022](https://github.com/FrozenBurning/Relighting4D)
 
 
 
-
-## 9. Acknowledgments
-This code is based on the [RegNeRF](https://github.com/google-research/google-research/tree/master/regnerf) and [DPT](https://github.com/isl-org/DPT) codebases. 
-
-## 10. FAQ
-We will summarize frequently asked questions at this link [FAQ](https://github.com/Wanggcong/SparseNeRF/blob/master/FQA.md).
