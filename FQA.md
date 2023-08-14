@@ -21,7 +21,7 @@ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 ```
 
 
-### Q2:
+### Q3:
 CMake 3.12 or higher is required.  You are running version 2.8.12.2
 
 ```
@@ -29,5 +29,8 @@ pip install cmake --upgrade
 ```
 
 
-### Q3: 
+### Q4: If you use GPU cluster, you might consider replacing CUDA_VISIBLE_DEVICES=x with the follow command
+```
 srun -p priority --mpi=pmi2 --gres=gpu:1 -n1 --ntasks-per-node=1 --job-name=train_debug1 --kill-on-bad-exit=1
+```
+
