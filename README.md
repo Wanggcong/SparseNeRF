@@ -22,7 +22,7 @@
 
 ### :fire: [Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964) | [arXiv](https://arxiv.org/abs/2303.16196) 
 <div>
-:fire: Code and dataset will be released in a few days. Sorry for the delay. 
+
 </div>
     
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=wanggcong/SparseNeRF)
@@ -171,7 +171,7 @@ sh scripts/eval_zed.sh
 ```
 sh scripts/eval_iphone.sh
 ``` 
-## 6 (optional) Render videos
+## 6 (Optional) Render videos
 Please set the variables (the same as train_llff.sh and train_dtu.sh) in render_llff.sh or render_dtu.sh, and run.
 
 ### 6.1 Render videos on LLFF
@@ -195,7 +195,7 @@ sh scripts/render_zed.sh
 sh scripts/render_iphone.sh
 ```
 
-### 7 (optional) Compose videos
+## 7 (Optional) Compose videos
 Please set the variables in generate_video_llff.sh or other scripts, and run.
 ### 7.1 Compose videos on LLFF
 ```
@@ -216,7 +216,7 @@ sh generate_video_zed.sh
 sh generate_video_iphone.sh
 ```
 
-### 8 (optional) Tensorboard for visualizing training if necessary.
+## 8 (Optional) Tensorboard for visualizing training if necessary.
 ```
 tensorboard --logdir=./out/xxx/ --port=6006
 ```
