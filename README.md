@@ -14,7 +14,7 @@
 </div>
 
 <div>
-    ICCV, 2023
+    ICCV 2023
 </div>
 
 
@@ -35,10 +35,14 @@
 >:fire: **Update**:
 - [20230814] Code released. Please let us know if any bug exists.
 - [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
+- [20221001] Old version of SparseNeRF. 
+
 
 >:fire: **New features**:
 - SparseNeRF+FreeNeRF (TODO), coming in 5 days.
 - A frequently asked questions (FAQ) list, coming in 5 days.
+- A tutorial on how to integrate SparseNeRF to your own dataset, coming in 10 days.
+- A tutorial on how to integrate SparseNeRF to your own method, coming in 10 days.
 
 >:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
@@ -259,3 +263,6 @@ Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distill
 [Text2Light: Zero-Shot Text-Driven HDR Panorama Generation](https://frozenburning.github.io/projects/text2light/)
 
 [Relighting4D: Neural Relightable Human from Videos, ECCV 2022](https://github.com/FrozenBurning/Relighting4D)
+
+
+
