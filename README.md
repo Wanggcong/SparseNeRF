@@ -36,6 +36,10 @@
 - [20230814] Code released. Please let us know if any bug exists.
 - [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
 
+>:fire: **New features**:
+- SparseNeRF+FreeNeRF (TODO), coming in 5 days.
+- A frequently asked questions (FAQ) list, coming in 5 days.
+
 >:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
 >:fire: **Abstract:** Neural Radiance Field (NeRF) significantly degrades when only a limited number of views are available. To complement the lack of 3D information, depth-based models, such as DSNeRF and MonoSDF, explicitly assume the availability of accurate depth maps of multiple views. They linearly scale the accurate depth maps as supervision to guide the predicted depth of few-shot NeRFs. However, accurate depth maps are difficult and expensive to capture due to wide-range depth distances in the wild. 
@@ -223,15 +227,8 @@ tensorboard --logdir=./out/xxx/ --port=6006
 If it raises errors, see Q2 of [FQA](https://github.com/Wanggcong/SparseNeRF/blob/master/FQA.md)
 
 
-## 9. To-Do
-- [x] Training code
-- [x] Inference model
-- [x] Clean Code
-- [ ] Colab Demo
 
-
-
-## 10. Citation
+## 9. Citation
 
 If you find this useful for your research, please cite the our paper.
 
@@ -250,7 +247,7 @@ or
 Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis, Under review.
 ```
 
-## 11. Related Links
+## 10. Related Links
 [RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs, CVPR, 2022](https://m-niemeyer.github.io/regnerf/index.html)
 
 [Traditional Classification Neural Networks are Good Generators: They are Competitive with DDPMs and GANs](https://classifier-as-generator.github.io/)
@@ -262,6 +259,3 @@ Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distill
 [Text2Light: Zero-Shot Text-Driven HDR Panorama Generation](https://frozenburning.github.io/projects/text2light/)
 
 [Relighting4D: Neural Relightable Human from Videos, ECCV 2022](https://github.com/FrozenBurning/Relighting4D)
-
-
-
