@@ -40,7 +40,7 @@
 
 >:fire: **New features**:
 - SparseNeRF+FreeNeRF (TODO), coming in 5 days.
-- A frequently asked questions (FAQ) list, coming in 5 days.
+- A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
 - A tutorial on how to integrate SparseNeRF to your own dataset, coming in 10 days.
 - A tutorial on how to integrate SparseNeRF to your own method, coming in 10 days.
 
