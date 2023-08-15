@@ -101,29 +101,26 @@ pip install imageio-ffmpeg
 ```
 ## 3. Dataset
 
-### Download DTU dataset
+### 3.1 Download DTU dataset
 - Download the DTU dataset from the [official website](https://roboimagedata.compute.dtu.dk/?page_id=36/), "Rectified (123 GB)" and "SampleSet (6.3 GB)"
 - Data: extract "Rectified (123 GB)"
 - Poses: extract "SampleSet/MVS\ Data/Calibration/cal18/" from "SampleSet (6.3 GB)"
 - Masks: download masks (used for evaluation only) from [this link](https://drive.google.com/file/d/1Yt5T3LJ9DZDiHbtd9PDFNHqJAd7wt-_E/view?usp=sharing)
-
-
-### Download LLFF dataset
-- Download LLFF from [the official download link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
-
-
-### Pre-process datasets
-- Get depth maps
-- For both LLFF and DTU, please set the variables $root_path, $benchmark, and $dataset_id in get_depth_map.sh, and run:
-```
-sh scripts/get_depth_map_for_llff.sh
-
-```
-
+- Get depth maps, For both LLFF and DTU, please set the variables $root_path, $benchmark, and $dataset_id in get_depth_map.sh, and run:
 ```
 sh scripts/get_depth_map_for_dtu.sh
-
 ```
+
+### 3.2 Download LLFF dataset
+- Download LLFF from [the official download link](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
+- Get depth maps, For both LLFF and DTU, please set the variables $root_path, $benchmark, and $dataset_id in get_depth_map.sh, and run:
+```
+sh scripts/get_depth_map_for_llff.sh
+```
+
+
+### 3.3 Download NVS-RGBD dataset
+- Download NVS-RGBD from the [official website link](https://drive.google.com/drive/folders/1gDVZomm0AGpgIja19Lbg4oJQmvHB30rB?usp=sharing)
 
 
 ## 4. Training 
