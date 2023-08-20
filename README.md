@@ -33,7 +33,7 @@
 </div>
 
 >:fire: **Update**:
-- [20230820] Add FreeNeRF w/ SparseNeRF. It shows that our SparseNeRF might be integrated into other methods.
+- [20230820] Add FreeNeRF w/ SparseNeRF. It shows that our SparseNeRF might be integrated into other methods, please find it at the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
 - [20230814] Code released. Please let us know if any bug exists.
 - [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
 - [20221004] The old version of SparseNeRF was released at [link](https://github.com/Wanggcong/SparseNeRF_old). The performance would be slightly worse than the current version.
