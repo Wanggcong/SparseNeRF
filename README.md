@@ -33,14 +33,14 @@
 </div>
 
 >:fire: **Update**:
-- [20230820] Add **FreeNeRF w/ SparseNeRF**. It shows that our SparseNeRF might be integrated into other methods, please find it at the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
+- [20230820] Add **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods, please find it at the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
 - [20230814] Code released. Please let us know if any bug exists.
 - [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
 - [20221004] The old version of SparseNeRF was released at [link](https://github.com/Wanggcong/SparseNeRF_old). The performance would be slightly worse than the current version.
 
 
 >:fire: **New features**:
-- FreeNeRF w/ SparseNeRF, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
+- **FreeNeRF w/ SparseNeRF**, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
 - A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
 - A tutorial on how to integrate SparseNeRF to your own dataset, coming in 10 days.
 - A tutorial on how to integrate SparseNeRF to your own method, coming in 10 days.
