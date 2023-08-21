@@ -40,7 +40,7 @@
 
 
 >:fire: **New features**:
-- FreeNeRF w/ SparseNeRF, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
+- FreeNeRF w/ SparseNeRF, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
 - A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
 - A tutorial on how to integrate SparseNeRF to your own dataset, coming in 10 days.
 - A tutorial on how to integrate SparseNeRF to your own method, coming in 10 days.
