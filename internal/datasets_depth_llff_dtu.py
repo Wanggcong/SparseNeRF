@@ -512,9 +512,7 @@ class Dataset(threading.Thread):
         h, w = self.depth_images[image_index].shape # (3024, 4032)--->(h, w)
         ray_indices = []
         folds = 4
-        depth_image = self.depth_images[image_index]
-        depth_mono = []
-        
+        depth_image = self.depth_images[image_index]    
         max_min_depth = (depth_image.max()-depth_image.min())*1.0
 
         if self.config.dataset_loader=='llff':
@@ -598,17 +596,12 @@ class Dataset(threading.Thread):
             ray_indices.append(h_r[j,0]*w+w_r[j,0])
             ray_indices.append(label1_neighbor_coor_h*w+label1_neighbor_coor_w) # label1 first, the larger labels, the smaller distance, see visualization of depth images
             ray_indices.append(label0_neighbor_coor_h*w+label0_neighbor_coor_w)
-            depth_mono.append(label1)
-            depth_mono.append(label0)
           else:
             ray_indices.append(h_r[j,0]*w+w_r[j,0]) # label0 first
             ray_indices.append(h_r[j,1]*w+w_r[j,1])
             ray_indices.append(label0_neighbor_coor_h*w+label0_neighbor_coor_w)
             ray_indices.append(label1_neighbor_coor_h*w+label1_neighbor_coor_w) # label1 first, the larger labels, the smaller distance, see visualization of depth images
-            depth_mono.append(label0)
-            depth_mono.append(label1)
         ray_indices = np.array(ray_indices) 
-        depth_mono = np.array(depth_mono) 
       else:
         ray_indices = np.random.randint(0, self.rays[idxs].origins[0].shape[0],(self.batch_size,))
    
