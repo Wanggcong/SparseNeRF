@@ -44,7 +44,7 @@
 - **FreeNeRF w/ SparseNeRF**, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
 - A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
 - A tutorial on how to integrate SparseNeRF into **your own dataset**, please click the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md).
-- A tutorial on how to integrate SparseNeRF into your own method, coming in 10 days.
+- A tutorial on how to integrate SparseNeRF into your own method before September.
 
 >:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
