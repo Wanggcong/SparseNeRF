@@ -43,7 +43,7 @@ Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/8#issuecomm
 
 
 ### Q7: How to use your own custom datast? 
-Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md)
+Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md) for details.
 
 
 
