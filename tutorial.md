@@ -10,7 +10,7 @@ In dataset_xyz.py, add a
     'dtu': DTU,
     ‘’
     }
-- Modify the Class LLFF: 
+* Modify the Class LLFF: 
 In _next_train_ function, define: box_h = 300 box_w = 400 
 The box size depends on 1) the object size and 2)the accuracy of pre-trained depth estimation models. Please see https://github.com/Wanggcong/SparseNeRF/issues/7
 
