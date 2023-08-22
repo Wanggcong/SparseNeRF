@@ -36,3 +36,14 @@ srun -p priority --mpi=pmi2 --gres=gpu:1 -n1 --ntasks-per-node=1 --job-name=trai
 
 ### Q5: How to set window/box size?
 It is based on 1) the object size and 2)the accuracy of pre-trained depth estimation models. Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/7#issuecomment-1686215227) for details.
+
+
+### Q6: How to set loss weights?
+Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/8#issuecomment-1687561545) for details.
+
+
+### Q7: How to use your own custom datast? 
+Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md)
+
+
+
