@@ -34,3 +34,5 @@ pip install cmake --upgrade
 srun -p priority --mpi=pmi2 --gres=gpu:1 -n1 --ntasks-per-node=1 --job-name=train_debug1 --kill-on-bad-exit=1
 ```
 
+### Q5: How to set window/box size?
+It is based on 1) the object size and 2)the accuracy of pre-trained depth estimation models. Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/7#issuecomment-1686215227) for details.
