@@ -41,10 +41,10 @@
 
 
 >:fire: **New features**:
-- [Combine with other methods] **FreeNeRF w/ SparseNeRF**, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
-- [FAQ] A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
-- [Use your dataset] A tutorial on how to integrate SparseNeRF into **your own dataset**, please click the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md).
-- [Add it into your method] A tutorial on how to integrate SparseNeRF into your own method before September.
+- **[Combine with other methods]** **FreeNeRF w/ SparseNeRF**, which achieves better results, please click the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
+- **[FAQ]** A frequently asked questions (FAQ) list, click [link](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md).
+- **[Use your dataset]** A tutorial on how to integrate SparseNeRF into **your own dataset**, please click the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md).
+- **[Add it into your method]** A tutorial on how to integrate SparseNeRF into your own method before September.
 
 >:fire: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
