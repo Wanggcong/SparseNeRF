@@ -41,7 +41,7 @@
 
 
 >:fire: **New features**:
-- **[Combine with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results.
+- **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results.
 - **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
 - **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
 - **[Add it into your method]**: A tutorial on how to integrate SparseNeRF into your own method before September.
