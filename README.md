@@ -33,11 +33,11 @@
 </div>
 
 >:baby_chick: **Update**:
-- [20230822] Add a tutorial on how to integrate SparseNeRF into **your own dataset**, please click the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md).
-- [20230820] Add **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods, please find it at the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
-- [20230814] Code released. Please let us know if any bug exists.
-- [20230806] We are working very hard on releasing the code. Expected to release the code in a few days.
-- [20221004] The old version of SparseNeRF was released at [link](https://github.com/Wanggcong/SparseNeRF_old). The performance would be slightly worse than the current version.
+- [20230822] Add a tutorial on how to integrate SparseNeRF into **your own dataset** :four_leaf_clover:, please click the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md).
+- [20230820] Add **FreeNeRF w/ SparseNeRF** :four_leaf_clover:, which achieves better results. It shows that our SparseNeRF might be integrated into other methods, please find it at the [link](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF).
+- [20230814] Code released :four_leaf_clover:. Please let us know if any bug exists.
+- [20230806] We are working very hard on releasing the code. Expected to release the code in a few days :four_leaf_clover:. 
+- [20221004] The old version of SparseNeRF :four_leaf_clover: was released at [link](https://github.com/Wanggcong/SparseNeRF_old). The performance would be slightly worse than the current version.
 
 
 >:baby_chick: **New features**:
