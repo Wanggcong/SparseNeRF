@@ -112,15 +112,6 @@ def train_step(
         compute_extras=(config.compute_disp_metrics or
                         config.compute_normal_metrics))
     lossmult = batch['rays'].lossmult
-    
-    # renderings_sparse = model.apply(
-    #     variables,
-    #     key if config.randomized else None, # randomized is True
-    #     batch['rays_sparse'],
-    #     resample_padding=resample_padding,
-    #     compute_extras=(config.compute_disp_metrics or
-    #                     config.compute_normal_metrics))
-    # lossmult_sparse = batch['weight_sparse']
 
     if config.disable_multiscale_loss: #False
       lossmult = jnp.ones_like(lossmult)
@@ -137,19 +128,12 @@ def train_step(
       numer = (lossmult * (rendering['rgb'] - batch['rgb'][Ellipsis, :3])**2).sum()
       denom = lossmult.sum()
       losses.append(numer / denom)
-      rays_per_superpixels = 4
 
-      if True:
-        depth = rendering['distance_mean'] # batch
-        batchsize_half = depth.shape[0]//2
-        depth=depth[:batchsize_half]
-        # depth_pred_all = batch['depth_mono'][:batchsize_half]
-      else:
-        depth = rendering['distance_mean'] # batch
-        # depth_pred_all = batch['depth_mono']
+      depth = rendering['distance_mean'] # batch
+      batchsize_half = depth.shape[0]//2
+      depth=depth[:batchsize_half]
 
-      # depth = rendering['distance_mean']
-      depth = depth.reshape(-1,rays_per_superpixels).transpose()
+      depth = depth.reshape(-1,4).transpose()
 
 
       margin1 = 1e-4
