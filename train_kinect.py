@@ -129,19 +129,12 @@ def train_step(
       numer = (lossmult * (rendering['rgb'] - batch['rgb'][Ellipsis, :3])**2).sum()
       denom = lossmult.sum()
       losses.append(numer / denom)
-      rays_per_superpixels = 4
+      depth = rendering['distance_mean'] # batch
+      batchsize_half = depth.shape[0]//2
+      depth=depth[:batchsize_half]
 
-      if True:
-        depth = rendering['distance_mean'] # batch
-        batchsize_half = depth.shape[0]//2
-        depth=depth[:batchsize_half]
-        # depth_pred_all = batch['depth_mono'][:batchsize_half]
-      else:
-        depth = rendering['distance_mean'] # batch
-        # depth_pred_all = batch['depth_mono']
 
-      # depth = rendering['distance_mean']
-      depth = depth.reshape(-1,rays_per_superpixels).transpose()
+      depth = depth.reshape(-1,4).transpose()
 
 
       margin1 = 1e-4
