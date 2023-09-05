@@ -94,11 +94,9 @@ def train_step(
       rng: jnp.ndarray, updated random number generator.
   """
 
-#   import pdb
-#   pdb.set_trace()
+
 
   rng, key, key2 = random.split(rng, 3)
-#   print('step:', step)
   def loss_fn(variables): # contains global vars of train_step, such as batch...
 
     weight_l2 = (
@@ -114,14 +112,7 @@ def train_step(
                         config.compute_normal_metrics))
     lossmult = batch['rays'].lossmult
     
-    # renderings_sparse = model.apply(
-    #     variables,
-    #     key if config.randomized else None, # randomized is True
-    #     batch['rays_sparse'],
-    #     resample_padding=resample_padding,
-    #     compute_extras=(config.compute_disp_metrics or
-    #                     config.compute_normal_metrics))
-    # lossmult_sparse = batch['weight_sparse']
+
 
     if config.disable_multiscale_loss: #False
       lossmult = jnp.ones_like(lossmult)
@@ -179,27 +170,7 @@ def train_step(
 
     render_random_rays = ((config.depth_tvnorm_loss_mult != 0.0) or #depth_tvnorm_loss_mult=0.1
                           (config.depth_tvnorm_decay)) # depth_tvnorm_decay is True
-    ########## sparse point 
-    # import pdb
-    # pdb.set_trace()
-    # if True:
-    #   sparse_depth_losses = []
-    #   for rendering in renderings_sparse:
-    #     z = batch['depth_sparse']
-    #     z_normal = 1-1./z 
-    #     # z_normal = 1-2./(z+1) 
-    #     # print('z_normal:',z_normal)
-    #     # sparse_depth_loss = (batch['weight_sparse']*((rendering['distance_mean'] - batch['depth_sparse'])**2)).mean()
-    #     sparse_depth_loss = (batch['weight_sparse']*(jnp.abs(rendering['distance_mean'] - z_normal))).mean()
-    #     # sparse_depth_loss = (batch['weight_sparse']*((rendering['distance_mean'] - z_normal)**2)).mean()
-    #     sparse_depth_losses.append(sparse_depth_loss)
 
-    #     # denom = lossmult.sum()
-    #     # losses.append(numer / denom)
-    #     # rays_per_superpixels = 4
-    #     # depth = rendering['distance_mean']
-    #     # depth = depth.reshape(-1,rays_per_superpixels).transpose() #
-    # ########## patch based
     if render_random_rays: # True
       losses_georeg = []
       renderings_random = model.apply(
