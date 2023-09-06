@@ -33,7 +33,7 @@
 </div>
 
 >:baby_chick: **Update**:
-- [20230906] **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. :loudspeaker:
+- [20230906] :loudspeaker: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
 - [20230822] Add a tutorial on how to **[integrate SparseNeRF into your own dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**.
 - [20230820] Add **[FreeNeRF w/ SparseNeRF](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**:, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - [20230814] Code released. Please let us know if any bug exists.
