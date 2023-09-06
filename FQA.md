@@ -42,8 +42,9 @@ It is based on 1) the object size and 2)the accuracy of pre-trained depth estima
 Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/8#issuecomment-1687561545) for details.
 
 
-### Q7: How to use your own custom datast? 
+### Q7: How to use your own custom dataset? 
 Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md) for details.
 
 
-
+### Q8: Do we need to transform the rendered depth map to inverse depth maps like DPT?
+No. We use NDC here. If not NDC, you might carefully balance the color reconstruction loss and the depth distillation loss. 
