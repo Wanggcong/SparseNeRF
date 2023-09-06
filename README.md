@@ -38,7 +38,7 @@
 - [20230820] Add **[FreeNeRF w/ SparseNeRF](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**:, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - [20230814] Code released. Please let us know if any bug exists.
 - [20230806] We are working very hard on releasing the code. Expected to release the code in a few days. 
-- [20221004] The [old version of SparseNeRF](https://github.com/Wanggcong/SparseNeRF_old) was released. The performance would be slightly worse than the current version.
+- [20221004] The **[old version of SparseNeRF](https://github.com/Wanggcong/SparseNeRF_old)** was released. The performance would be slightly worse than the current version.
 
 
 >:baby_chick: **New features**:
