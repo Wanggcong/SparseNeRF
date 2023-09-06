@@ -46,5 +46,5 @@ Please see the [link](https://github.com/Wanggcong/SparseNeRF/issues/8#issuecomm
 Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial.md) for details.
 
 
-### Q8: Do we need to transform the rendered depth map to inverse depth maps like DPT?
+### Q8: When computing depth losses, do we need to transform the rendered depth map to inverse depth maps like DPT?
 No. We use NDC here. If not NDC, you might carefully balance the color reconstruction loss and the depth distillation loss. 
