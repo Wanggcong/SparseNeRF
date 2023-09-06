@@ -44,7 +44,7 @@
 - :white_check_mark: **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
 - :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
-- :white_check_mark: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)**: A tutorial on how to implement SparseNeRF is released. If you cannot open the link, you can download it in the tutorial folder.
+- :white_check_mark: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)**: A tutorial on how to implement SparseNeRF is released. If you cannot open the link, you can download it in the tutorial folder.
 
 >:baby_chick: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
