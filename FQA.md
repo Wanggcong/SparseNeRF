@@ -48,3 +48,8 @@ Please see the [link](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial
 
 ### Q8: When computing depth losses, do we need to transform the rendered depth map to inverse depth maps like DPT?
 No. We use NDC here. If not NDC, you might carefully balance the color reconstruction loss and the depth distillation loss. 
+
+
+
+### Q9: How to sample rays? Or where is the main differences from the RegNeRF repo? 
+Please see the issue [link](https://github.com/Wanggcong/SparseNeRF/issues/12)
