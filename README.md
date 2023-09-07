@@ -32,7 +32,7 @@
 </tr>
 </div>
 
->:baby_chick: **status**
+>:baby_chick: **Status**
 
 Currently, I am actively maintaining this repo. I am trying to answer your issues as soon as possible. Please do not hesitate to raise an issue if any questions.
 
