@@ -34,7 +34,7 @@
 
 >:baby_chick: **Status**
 
-Currently, I am actively maintaining this repo. I am trying to answer your issues as soon as possible. Please do not hesitate to raise an issue if any questions.
+Currently, I am actively maintaining this repo. I am trying to answer your issues as soon as possible. Please do not hesitate to raise issues if any questions.
 
 >:baby_chick: **Update**:
 - [20230906] :loudspeaker: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
