@@ -32,6 +32,8 @@
 </tr>
 </div>
 
+>:baby_chick: Currently, I am actively maintaining this repo. I am trying to answer your issues as soon as possible. Please raise a issue if any questions.
+
 >:baby_chick: **Update**:
 - [20230906] :loudspeaker: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
 - [20230822] Add a tutorial on how to **[integrate SparseNeRF into your own dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**.
