@@ -121,9 +121,8 @@ def train_step(
       numer = (lossmult * (rendering['rgb'] - batch['rgb'][Ellipsis, :3])**2).sum()
       denom = lossmult.sum()
       losses.append(numer / denom)
-      rays_per_superpixels = 4
       depth = rendering['distance_mean']
-      depth = depth.reshape(-1,rays_per_superpixels).transpose()
+      depth = depth.reshape(-1,4).transpose() # two pairs of points, so here is 4
 
 
       margin1 = 1e-4
