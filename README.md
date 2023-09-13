@@ -43,7 +43,7 @@
 
 
 >:baby_chick: **New features**:
-- - :white_check_mark: Only one GPU for training and test.
+- :white_check_mark: Only one GPU for training and test.
 - :white_check_mark: **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
 - :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
