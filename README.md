@@ -42,7 +42,8 @@
 - [20221004] The **[old version of SparseNeRF](https://github.com/Wanggcong/SparseNeRF_old)** was released. The performance would be slightly worse than the current version.
 
 
->:baby_chick: **New features**:
+>:baby_chick: **Features**:
+- :white_check_mark: Applied for General scenes. Depth maps from pre-trained monocular depth estimation or depth sensors, which are coarse and easy to obtain. 
 - :white_check_mark: Only 1 GPU for training and test.
 - :white_check_mark: **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
