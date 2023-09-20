@@ -44,7 +44,7 @@
 
 >:baby_chick: **Features**:
 - :white_check_mark: Applied for General scenes. Depth maps from pre-trained monocular depth estimation or depth sensors, which are coarse and easy to obtain. 
-- :white_check_mark: Only 1 GPU for training and test.
+- :white_check_mark: Only 1 GPU for training and test. Training a scene requires about 2 hours.
 - :white_check_mark: **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
 - :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
