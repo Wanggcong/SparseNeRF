@@ -255,7 +255,11 @@ Guangcong Wang, Zhaoxi Chen, Chen Change Loy, and Ziwei Liu. SparseNeRF: Distill
 ```
 
 ## 10. Related Links
+
+
 [RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs, CVPR, 2022](https://m-niemeyer.github.io/regnerf/index.html)
+
+[ViTA: Video Transformer Adaptor for Robust Video Depth Estimation](https://github.com/KexianHust/ViTA)
 
 [Traditional Classification Neural Networks are Good Generators: They are Competitive with DDPMs and GANs](https://classifier-as-generator.github.io/)
 
