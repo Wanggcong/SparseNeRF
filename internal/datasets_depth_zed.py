@@ -1039,12 +1039,12 @@ class LLFF(Dataset):
         image = np.array(Image.open(imgin), dtype=np.float32) / 255.
         images.append(image)
 
-        # image_uint8 = cv2.imread(imgfile)
-        # h, w, _ = image_uint8.shape
+        image_uint8 = cv2.imread(imgfile)
+        h, w, _ = image_uint8.shape
 
         depth_file = os.path.join(self.config.data_dir, imgfile.split('/')[-3], 'depth_maps', imgfile.split('/')[-1])
         depth_img = cv2.imread(depth_file, cv2.IMREAD_ANYDEPTH) # or -1
-        # depth_img = cv2.resize(depth_img, (w, h))
+        depth_img = cv2.resize(depth_img, (w, h))
 
         depth_images.append(depth_img)
 
