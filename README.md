@@ -34,6 +34,7 @@
 
 
 >:baby_chick: **Update**:
+- [20231011] Add a [poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)
 - [20231010] Fixed datasets_depth_kinect.py and datasets_depth_zed.py
 - [20230906] :loudspeaker: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
 - [20230822] Add a tutorial on how to **[integrate SparseNeRF into your own dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**.
@@ -50,6 +51,7 @@
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
 - :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
 - :white_check_mark: **[Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)**: A tutorial on how to implement SparseNeRF is released. If you cannot open the link, you can download it in the tutorial folder.
+- :white_check_mark: See the **[poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** for the overview.
 
 >:baby_chick: **TL;DR**: We present SparseNeRF, a simple yet effective method that synthesizes novel views given a few images. SparseNeRF distills robust local depth ranking priors from real-world inaccurate depth observations, such as pre-trained monocular depth estimation models or consumer-level depth sensors.
 
