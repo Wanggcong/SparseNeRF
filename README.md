@@ -34,7 +34,7 @@
 
 
 >:baby_chick: **Update**:
-- [20231011] Added a [poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)
+- [20231011] Added a [poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true).
 - [20231010] Fixed datasets_depth_kinect.py and datasets_depth_zed.py
 - [20230906] :loudspeaker: **[Tutorial: Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
 - [20230822] Add a tutorial on how to **[integrate SparseNeRF into your own dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**.
