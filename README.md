@@ -34,14 +34,14 @@
 
 
 >:baby_chick: **Update**:
-- [20231011] Add a [poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)
+- [20231011] Added a [poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)
 - [20231010] Fixed datasets_depth_kinect.py and datasets_depth_zed.py
 - [20230906] :loudspeaker: **[Tutorial: Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** A tutorial on how to implement SparseNeRF is released. 
 - [20230822] Add a tutorial on how to **[integrate SparseNeRF into your own dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**.
 - [20230820] Add **[FreeNeRF w/ SparseNeRF](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - [20230814] Code released. Please let us know if any bug exists. We summarize the frequently asked issues in **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**.
 - [20230806] We are working very hard on releasing the code. We expect to release the code in a few days.
-- [20230328] Release **[Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964)** | **[arXiv](https://arxiv.org/abs/2303.16196)**.
+- [20230328] Released **[Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964)** | **[arXiv](https://arxiv.org/abs/2303.16196)**.
 - [20221004] The **[old version of SparseNeRF](https://github.com/Wanggcong/SparseNeRF_old)** was released. The performance would be slightly worse than the current version.
 
 
