@@ -50,7 +50,7 @@
 - :white_check_mark: Only 1 GPU for training and test. Training a scene requires about 2 hours.
 - :white_check_mark: **[Combine SparseNeRF with other methods](https://github.com/Wanggcong/FreeNeRF_plus_SparseNeRF)**: **FreeNeRF w/ SparseNeRF**, which achieves better results. It shows that our SparseNeRF might be integrated into other methods.
 - :white_check_mark: **[FAQ](https://github.com/Wanggcong/SparseNeRF/blob/main/FQA.md)**: A frequently asked questions (FAQ) list.
-- :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to integrate SparseNeRF into **your own dataset**.
+- :white_check_mark: **[Use your dataset](https://github.com/Wanggcong/SparseNeRF/blob/main/tutorial/tutorial.md)**: A tutorial on how to use **your own dataset**.
 - :white_check_mark: **[Tutorial: Detailed explanation of SparseNeRF, slide, figure+pseudo algorithm table](https://docs.google.com/presentation/d/19d18NnuYyX4f8lD0Y9Df0AE4XWYLsblc/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)**: A tutorial on how to implement SparseNeRF is released. If you cannot open the link, you can download it in the tutorial folder.
 - :white_check_mark: Refer to the **[poster](https://docs.google.com/presentation/d/1cEhC97jnLvVDyh33q-vRo_5Ook0y8mTV/edit?usp=sharing&ouid=115205863499027963192&rtpof=true&sd=true)** for the overview. Also see **[Project](https://sparsenerf.github.io/) | [YouTube](https://www.youtube.com/watch?v=V0yCTakA964)** | **[arXiv](https://arxiv.org/abs/2303.16196)**. 
 
