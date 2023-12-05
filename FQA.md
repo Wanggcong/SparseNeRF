@@ -53,3 +53,9 @@ No. We use NDC here. If not NDC, you might carefully balance the color reconstru
 
 ### Q9: How to sample rays? Or where is the main differences from the RegNeRF repo? 
 Please see the issue [link](https://github.com/Wanggcong/SparseNeRF/issues/12)
+
+### Q10: It seems that the loss is not related to the dpt depth? 
+
+Please see the issue [link](https://github.com/Wanggcong/SparseNeRF/issues/24)
+
+
