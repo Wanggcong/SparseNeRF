@@ -56,6 +56,8 @@ Please see the issue [link](https://github.com/Wanggcong/SparseNeRF/issues/12)
 
 ### Q10: It seems that the loss is not related to the dpt depth? 
 
+We sample the depth pixel values according to the dpt depth, please check this [code block](https://github.com/Wanggcong/SparseNeRF/blob/b545e5334f08999c51a6b0bb9cb8cc3767148f67/internal/datasets_depth_llff_dtu.py#L594C1-L604C44) . The "depth" variable in "depth_loss0_0 = jnp.mean(jnp.maximum(depth[0,:]-depth[1,:]+margin1,0))" in [code block](https://github.com/Wanggcong/SparseNeRF/blob/b545e5334f08999c51a6b0bb9cb8cc3767148f67/train_llff_dtu.py#L128C1-L132C87) actually has been ranked in [code block](https://github.com/Wanggcong/SparseNeRF/blob/b545e5334f08999c51a6b0bb9cb8cc3767148f67/internal/datasets_depth_llff_dtu.py#L594C1-L604C44).
+
 Please see the issue [link](https://github.com/Wanggcong/SparseNeRF/issues/24)
 
 
