@@ -130,7 +130,7 @@ sh scripts/get_depth_map_for_llff.sh
 
 
 ### 3.3 Download NVS-RGBD dataset
-- Download NVS-RGBD from the [official website link](https://drive.google.com/drive/folders/1gDVZomm0AGpgIja19Lbg4oJQmvHB30rB?usp=sharing)
+- Download NVS-RGBD from the [official website link](https://drive.google.com/file/d/1aMRg7Nf9i5pOG6_MTJtWTxhiuTtr6ZS9/view?usp=sharing)
 
 
 ## 4. Training 
