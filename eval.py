@@ -33,7 +33,7 @@ import tensorflow as tf
 ## ----- This file is modified significantly ------ ##
 ######################################################
 
-## ---- import neccessary pkgs ---- ##
+## ---- import necessary pkgs ---- ##
 from lpips import LPIPS
 import torch
 
